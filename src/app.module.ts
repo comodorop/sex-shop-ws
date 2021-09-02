@@ -3,11 +3,13 @@ import { ProductsModule } from './products/products.module';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import {UnitOfWorkModule} from './share/unitofwork/unitofwork.module'
 
 @Module({
   imports: [
     DbModule,
-    ProductsModule,],
+    ProductsModule,
+    UnitOfWorkModule],
   controllers: [AppController],
   providers: [AppService],
 })
