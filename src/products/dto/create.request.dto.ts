@@ -1,5 +1,5 @@
 export class CreateProductDTO{
-    name: String
-    description: String
+    name: string
+    description: string
     price: Number
 }

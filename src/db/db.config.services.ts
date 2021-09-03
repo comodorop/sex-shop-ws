@@ -15,6 +15,9 @@ export const dataBaseProvider = [
                 database: 'ecomerce',
                 __dirname: '/../**/infraestructure/schema/*.schema{.ts,.js}',
                 synchronize: true,
+                entities: [
+                    __dirname + '/../**/infraestructure/schema/*.schema{.ts,.js}'
+                ],
             }
         },
     })

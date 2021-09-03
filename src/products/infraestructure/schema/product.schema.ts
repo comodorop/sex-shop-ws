@@ -1,7 +1,7 @@
 import { Product } from '../../domain/model/product.model'
 import { EntitySchema } from 'typeorm'
 
-export const CompanySchema = new EntitySchema<Product>({
+export const ProductSchema = new EntitySchema<Product>({
     name: 'Product',
     target: Product,
     columns: {
