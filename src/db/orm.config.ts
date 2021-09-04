@@ -11,10 +11,10 @@ const config: ConnectionOptions = {
   password: '123456',
   database: 'ecomerce',
   entities: [__dirname + '/../**/infraestructure/schema/*.schema{.ts,.js}'],
-  migrations: [__dirname + '/migrations/*{.ts,.js}'],
+  migrations: ['src/migration/*{.ts,.js}'],
   cli: {
-    migrationsDir: '/src/db/migrations'
-  }
+    migrationsDir: 'src/db/migration'
+  },
 }
 
 export default config

@@ -18,6 +18,9 @@ export const ProductSchema = new EntitySchema<Product>({
         },
         price: {
             type: Number
+        },
+        colors: {
+            type: String
         }
     }
 });

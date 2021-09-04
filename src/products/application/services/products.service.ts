@@ -17,7 +17,7 @@ export class ProductsService implements BaseCreateProduct {
 
     async createProduct(createDto: CreateProductDTO): Promise<CreateProductDTO> {
         const product = new Product(
-            createDto.name,createDto.description, createDto.price
+            createDto.name,createDto.description, createDto.price, "blacl"
         )
         this.productRepository.save(product)
         return createDto

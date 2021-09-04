@@ -21,7 +21,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         {
             provide: 'IProductRepository',
             useClass: ProductRepository
-          },
+        },
     ],
     exports: ['BaseCreateProduct', 'IProductRepository']
 })
